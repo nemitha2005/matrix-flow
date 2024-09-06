@@ -37,7 +37,8 @@ function drawMatrix() {
   // Loop through each drop
   for (let i = 0; i < drops.length; i++) {
     // Randomly select a character from the array
-    const text = charactersArray[Math.floor(Math.random() * charactersArray.length)];
+    const text =
+      charactersArray[Math.floor(Math.random() * charactersArray.length)];
 
     // Draw the character at the current x and y position
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
